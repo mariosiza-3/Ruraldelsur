@@ -1,0 +1,392 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Encabezado */
+#encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkgreen; /* Verde */
+    color: #FFF; /* Blanco */
+    padding: 20px 40px;
+}
+
+    #encabezado h1 {
+        font-size: 2.5em;
+        color: white; /* Amarillo */
+        margin: 0;
+    }
+
+.logo-izquierdo {
+    width: 80px; /* Ajusta el tamaño de la imagen según necesites */
+    height: auto;
+    float:left;
+}
+
+
+/* Menú de navegación */
+nav {
+    margin-top: 15px;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #FFF; /* Blanco */
+    border: 2px solid darkgreen; /* Borde verde */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+    #menu li {
+        margin: 5px;
+    }
+
+        #menu li a {
+            display: inline-block;
+            padding: 12px 18px;
+            text-decoration: none;
+            color: darkgreen; /* Verde */
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 2px solid darkgreen;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            background-color: #FFF; /* Blanco */
+        }
+
+            #menu li a:hover {
+                background-color: darkgreen; /* Verde */
+                color: #FFF; /* Blanco */
+                border-color: #FFD700; /* Amarillo */
+                transform: scale(1.05);
+            }
+
+/* Contenido principal */
+#contenido {
+    padding: 10px;
+    background-color: #f9f9f9;
+    min-height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+#contenido1 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    min-height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 0px;
+    width: 98% ;
+}
+
+/* Pie de página */
+#footer {
+    text-align: center;
+    background-color:darkgreen; /* Verde */
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+    #footer p {
+        margin: 5px 0;
+        color: white;
+    }
+
+/*CSS Tablas*/
+/* Estilo del formulario y tabla */
+form {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 90px;
+    width: 98%;
+
+}
+
+h4 {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    height: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff;
+    color: #555;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+/* Efecto al pasar el cursor sobre las filas */
+tr:hover td {
+    background-color: #e9ecef;
+    color: darkgreen;
+    cursor: pointer;
+}
+
+/* Estilos para el botón Insertar Boletín */
+#insertboton1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color:green;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid black;
+
+}
+
+#insertboton1:hover {
+    background-color: rgb(194, 194, 0);
+    transform: scale(1.05);
+    color: black;
+    border: 2px solid green;
+}
+
+#insertboton1:active {
+    background-color: rgb(102, 3, 3);
+    transform: scale(1);
+}
+/* Estilo del contenedor del paginador */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+/* Estilo para los enlaces del paginador */
+.pagination a {
+    color: darkgreen;
+    padding: 10px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover en los enlaces */
+.pagination a:hover {
+    background-color: darkgreen;
+    color: #fff;
+    border-color: black;
+}
+
+/* Estilo para la página activa */
+.pagination a.active {
+    background-color:  darkgreen;
+    color: #fff;
+    border-color: #000000;
+    font-weight: bold;
+    pointer-events: none;
+}
+/*FORMULARIO*/
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    width: 100%;
+}
+
+input[type="text"], input[type="decimal"],input[type="date"], input[type="time"], input[type="file"], select {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color:darkgreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(1, 151, 1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.alert {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.alert.error {
+    background-color: #dc3545;
+}
+.styled-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.styled-input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+/* header 2 */
+
+.container34 {
+    text-align: center;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #006400;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+
+/* Estilos para las tarjetas */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px darkgreen;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #006400;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #32CD32; /* Verde claro */
+    margin-bottom: 10px;
+}
+/* Eliminar subrayado y establecer color del texto */
+a.card {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Usa el color del texto original */
+    display: block; /* Asegura que el enlace sea un bloque como el div */
+}
+
+/* Mantener los efectos hover de las tarjetas */
+a.card:hover {
+    transform: translateY(-10px); /* Efecto hover original */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombras al pasar el cursor */
+}
